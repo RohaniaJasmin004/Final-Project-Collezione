@@ -1,1 +1,48 @@
-
+[
+    {
+      "id": 1,
+      "title": "classic winter coat",
+      "price": 69.99,
+      "description": "Comfortable and warm coat",
+      "category": "coat",
+      "image": "https://i.pinimg.com/736x/56/0b/15/560b1557512e22e08aa0278de1ccd0e6.jpg",
+      "rating": {"rate":4.5,"count":120}
+    },
+    {
+      "id": 2,
+      "title": " Winter Jakcet",
+      "price": 19.99,
+      "description": "Warm and with neck",
+      "category": "Jacket",
+      "image": "https://i.pinimg.com/1200x/5e/ce/c1/5ecec10562f863400d24979a7d986cfa.jpg",
+      "rating": {"rate":4.2,"count":240}
+    },
+    {
+      "id": 3,
+      "title": "Comfortable Shoes",
+      "price": 49.99,
+      "description": "Warm and comfortable.",
+      "category": "Shoes",
+      "image": "https://i.pinimg.com/1200x/d9/4a/dd/d94add4e12ac65770a115307a04bd200.jpg",
+      "rating": {"rate":4.7,"count":80}
+    },
+    {
+      "id": 4,
+      "title": "Sylish Sunglasses",
+      "price": 129.99,
+      "description": "Comfortable for Sunny day",
+      "category": "accessories",
+      "image": "https://i.pinimg.com/1200x/2d/0f/5f/2d0f5f92232b5af501bc2e299e9cb1df.jpg",
+      "rating": {"rate":4.4,"count":60}
+    },
+    {
+      "id": 5,
+      "title": "Hand Bag",
+      "price": 15.00,
+      "description": "Classic Design",
+      "category": "accessories",
+      "image": "https://i.pinimg.com/736x/43/2f/64/432f64986fe863018084cafbe5860e20.jpg",
+      "rating": {"rate":4.6,"count":30}
+    }
+  ]
+  
