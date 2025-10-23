@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collezione — Home</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d9b9b9c1.js" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="description" content="Collezione — a responsive e-commerce demo built with HTML, CSS, Bootstrap, and vanilla JS.">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="https://i.pinimg.com/1200x/d8/99/59/d8995924709dff2a8faadc85414c9dad.jpg" alt="" class="me-2 logo" />
+          <span class="brand-text">Collezione</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Cart <span id="navCartCount" class="badge bg-primary ms-1">0</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user"></i> Account</a></li>
+            <li class="nav-item">
+              <button id="themeToggle" class="btn btn-sm btn-outline-secondary ms-2" aria-pressed="false" title="Toggle light/dark theme">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero / Carousel -->
+    <section class="hero py-5">
+      <div class="container">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Homepage highlights">
+          <div class="carousel-inner rounded shadow-sm overflow-hidden">
+            <div class="carousel-item active">
+              <img src="https://i.pinimg.com/736x/43/2f/64/432f64986fe863018084cafbe5860e20.jpg" class="d-block w-100" alt="Featured collection">
+              <div class="carousel-caption d-none d-md-block text-start">
+                <h2 class="display-6">New Arrivals — New Style</Style></h2>
+                <p class="lead">Enjoy Your Life With New Style</p>
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/736x/06/a7/aa/06a7aa36d073fe7b16db4a61c897aa49.jpg" class="d-block w-100" alt="Seasonal sale">
+              <div class="carousel-caption d-none d-md-block text-start">
+                <h2 class="display-6">All Session sale</h2>
+                <p class="lead">Up to 50% off selected items. Limited time.</p>
+                <a href="products.html" class="btn btn-warning">Explore Offers</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured products -->
+    <section class="featured py-5" aria-labelledby="featuredTitle">
+      <div class="container">
+        <h3 id="featuredTitle" class="mb-4">Featured Products</h3>
+        <div id="featured-list" class="row g-4">
+          <!-- Products loaded via JS -->
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="products.html" class="btn btn-outline-dark">View All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info / How it works -->
+    <section class="info py-5 bg-white">
+      <div class="container">
+        <div class="row text-center gy-4">
+          <div class="col-md-4">
+            <div class="info-card p-3">
+              <i class="fas fa-truck fa-2x mb-2" aria-hidden="true"></i>
+              <h5>Fast delivery</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card p-3">
+              <i class="fas fa-sync-alt fa-2x mb-2" aria-hidden="true"></i>
+              <h5>Take one 2 Free</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card p-3">
+              <i class="fas fa-headset fa-2x mb-2" aria-hidden="true"></i>
+              <h5>24/7 Support</h5>
+              <p class="small">We're here to help your style</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+        <a href="#" class="me-2" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="me-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main + products scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
